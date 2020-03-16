@@ -1,0 +1,95 @@
+
+//init the led to D7
+int led1 = D7;
+
+
+void setup() {
+
+pinMode(led1, OUTPUT);
+
+}
+
+void loop() {
+
+
+//display letter Q - dash dash dot dash
+digitalWrite(led1, HIGH);
+delay(3000);
+digitalWrite(led1, LOW);
+
+delay(1000);
+
+digitalWrite(led1, HIGH);
+delay(3000);
+digitalWrite(led1, LOW);
+
+delay(1000);
+
+digitalWrite(led1, HIGH);
+delay(1000);
+digitalWrite(led1, LOW);
+
+delay(1000);
+
+digitalWrite(led1, HIGH);
+delay(3000);
+digitalWrite(led1, LOW);
+
+
+//space between letters
+delay(3000);
+
+
+//display letter U - dot dot dash
+digitalWrite(led1, HIGH);
+delay(1000);
+digitalWrite(led1, LOW);
+
+delay(1000);
+
+digitalWrite(led1, HIGH);
+delay(1000);
+digitalWrite(led1, LOW);
+
+delay(1000);
+
+digitalWrite(led1, HIGH);
+delay(3000);
+digitalWrite(led1, LOW);
+
+
+//space between letters
+delay (3000);
+
+
+//display letter A - dot dash
+digitalWrite(led1, HIGH);
+delay(1000);
+digitalWrite(led1, LOW);
+
+delay(1000);
+
+digitalWrite(led1, HIGH);
+delay(3000);
+digitalWrite(led1, LOW);
+
+
+//space between letters
+delay(3000);
+
+
+//display letter N - dash dot
+digitalWrite(led1, HIGH);
+delay(3000);
+digitalWrite(led1, LOW);
+
+delay(1000);
+
+digitalWrite(led1, HIGH);
+delay(1000);
+digitalWrite(led1, LOW);
+
+
+//space betweenn words - since we're looping 1 word so the last space should be 7 secs
+delay(7000);
+}
